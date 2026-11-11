@@ -1,0 +1,44 @@
+{
+  "slug": "coastal-observation-mesh",
+  "gateway": [
+    "forecast",
+    "/conditions",
+    "JavaScript"
+  ],
+  "worker": [
+    "advisory",
+    "/assess",
+    "Python"
+  ],
+  "cases": [
+    [
+      "Current buoy observations",
+      {
+        "asOf": "2026-11-11T15:00:00Z",
+        "observations": [
+          {
+            "time": "2026-11-11T14:00:00Z",
+            "waveFeet": 4.4,
+            "windMph": 14
+          },
+          {
+            "time": "2026-11-11T14:30:00Z",
+            "waveFeet": 5.6,
+            "windMph": 19
+          },
+          {
+            "time": "2026-11-11T10:30:00Z",
+            "waveFeet": 18,
+            "windMph": 55
+          }
+        ]
+      },
+      200,
+      {
+        "samples": 2,
+        "meanWaveFeet": 5,
+        "advisory": "elevated"
+      }
+    ]
+  ]
+}
